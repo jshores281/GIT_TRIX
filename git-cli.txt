@@ -6,6 +6,9 @@ git
 # start a file tracking in project directory
 git init -b main
 
+# login to github user account
+gh auth login
+
 # create repository on github.com/profile
 gh repo create DATA-TOOLS
 
