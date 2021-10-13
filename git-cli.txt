@@ -1,0 +1,29 @@
+#! git syntax
+####################################################################################
+
+git
+
+# start a file tracking in project directory
+git init -b main
+
+# create repository on github.com/profile
+gh repo create DATA-TOOLS
+
+# tracks changes to file tree
+git pull --set-upstream origin main
+
+# commits changes to github.com/profile/repository
+git add . && git commit -m "initial commit" && git push
+
+# change public email 
+git config --global user.email
+git config --global user.email 52839097+jshores281@users.noreply.github.com
+
+
+
+
+
+
+
+####################################################################################
+####################################################################################
