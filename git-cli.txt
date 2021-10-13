@@ -16,7 +16,7 @@ gh repo create DATA-TOOLS
 git pull --set-upstream origin main
 
 # commits changes to github.com/profile/repository
-git add . && git commit -m "initial commit" && git push
+git add . && git commit -m "updated push commands" && git push
 
 # change public email 
 git config --global user.email
@@ -24,6 +24,17 @@ git config --global user.email 52839097+jshores281@users.noreply.github.com
 
 
 
+
+# update local repo (filsys on pc) from remote (github)
+git pull -f --set-upstream origin main
+
+
+# checks remote connections to local repo
+git remote -v
+
+
+# updates local repo from remote repo
+git pull https://github.com/jshores281/project-name
 
 
 
