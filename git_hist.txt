@@ -1,0 +1,50 @@
+git remote
+git remote -V
+git remote -v
+cd C:\Users\HELIOS\Documents\CODE_BASE\PY\py.projects\in-prog_pys\desk_apps\music_alarm
+git remote -v
+git init -b main
+git push -f --set-upstream origin main
+git pull https://github.com/jshores281/Music_Alarm
+git push -f --set-upstream origin main
+git pull https://github.com/jshores281/Music_Alarmgit remote add origin
+git remote add origin
+git push add origin
+git pull --set-upstream origin main
+git pull https://github.com/jshores281/Music_Alarm
+git pull -f https://github.com/jshores281/Music_Alarm
+git remote -v
+git pull --set-upstream origin main
+git add . && git commit -m "updated push commands" && git push
+git remote add https://github.com/jshores281/Music_Alarm
+git push -f --set-upstream origin main
+git init -b main
+git pull --set-upstream origin main
+gh auth login
+git init -b main
+git pull https://github.com/jshores281/Music_Alarm
+git push https://github.com/jshores281/Music_Alarm
+git remote add https://github.com/jshores281/Music_Alarm
+git remote add -t https://github.com/jshores281/Music_Alarm
+git remote add -t Music_Alarm https://github.com/jshores281/Music_Alarm
+git remote -v
+git add . && git commit -m "updated push commands" && git push
+git remote -v
+git pull --set-upstream origin main
+git pull -f --set-upstream origin main
+git pull https://github.com/jshores281/project-name
+git pull https://github.com/jshores281/Music_Alarm
+git pull https://github.com/jshores281/Music_Alarm --allow-unrelated-histories
+git add . && git commit -m "updated push commands" && git push
+git remote -v
+git pull https://github.com/jshores281/Music_Alarm
+git push add origin
+git push origin
+git push --set-upstream origin main
+git pull --set-upstream origin main
+git pull -f --set-upstream origin main
+git pull https://github.com/jshores281/Music_Alarm
+git push https://github.com/jshores281/Music_Alarm
+git push --set-upstream https://github.com/jshores281/Music_Alarm main
+doskey /history
+doskey /history > git_hist.txt
