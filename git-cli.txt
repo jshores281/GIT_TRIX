@@ -3,20 +3,22 @@
 
 git
 
+# login to github user account
+gh auth login
+
 # start a file tracking in project directory
 git init -b main
 
-# login to github user account
-gh auth login
+
 
 # create repository on github.com/profile
 gh repo create DATA-TOOLS
 
-# tracks changes to file tree
+# tracks changes to file tree from remote to local fs
 git pull --set-upstream origin main
 
 # commits changes to github.com/profile/repository
-git add . && git commit -m "updated push commands" && git push
+git add . && git commit -m "COMMIT COMMENTS" && git push
 
 # change public email 
 git config --global user.email
@@ -37,7 +39,11 @@ git remote -v
 git pull https://github.com/jshores281/project-name
 
 
+# changed name on local repo folder
+git remote add -f main https://github.com/jshores281/PASS-RETR
 
+# add from remote to new local repo
+git remote add origin https://github.com/jshores281/PASS-RETR
 
 ####################################################################################
 ####################################################################################
