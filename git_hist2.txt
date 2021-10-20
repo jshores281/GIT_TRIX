@@ -1,0 +1,43 @@
+cd C:\Users\jshor\Port_Proj\4IdeaProjects\2python progs\4APPprogs\tbelt\web.proc\btc apps\digi_barter\Digi.Barter-main\Digi.Barter-mainV3
+dir
+git remote -v
+gh auth login
+git pull https://github.com/jshores281
+dir
+start .
+git pull https://github.com/jshores281/Digi.Barter
+git remote add -f main https://github.com/jshores281/Digi.Barter
+git remote add origin https://github.com/jshores281/Digi.Barter
+git remote -v
+start .
+git add mc_scout && git commit -m "cleaned up interface and multi coin retrieve" && git push
+git add mc_scout.py && git commit -m "cleaned up interface and multi coin retrieve" && git push
+git push --set-upstream origin main
+git add mc_scout.py && git commit -m "cleaned up interface and multi coin retrieve" && git push
+git remote -v
+git pull 
+git pull --set-upstream origin main
+git pull
+2cd C:\Users\jshor\Port_Proj\1CLI\6git
+cd C:\Users\jshor\Port_Proj\1CLI\6git
+git remote -v
+git pull
+git add . && git commit -m "local repo update" && git push
+git add . && git commit -m "local repo update" && git push -f
+git add . && git commit -m "local repo update" && git push 
+git pull
+git pull -f
+git pull /?
+git pull --help
+git remote -v
+git push
+git push [-f] --set-upstream origin main
+git push -f --set-upstream origin main
+git push
+git add . && git commit -m "remote repo update" && git push 
+git push -f --set-upstream --help
+git push --set-upstream --help
+git push --help
+git push --set-upstream
+git remote -v
+
