@@ -27,7 +27,7 @@ git pull [-f] --set-upstream [origin] [main]
 
 
 
-# commits changes to github.com/profile/repository
+# commits changes to github.com/profile/repository		
 git add . && git commit -m "VERSION CONTROL COMMENT" && git push
 
 
@@ -204,6 +204,9 @@ error: failed to push some refs to '[-f]'
 
 
 ******************************************************************************
+******************************************************************************
+2.
+
 C:\Users\jshor\Port_Proj\1CLI\6git>git push -f --set-upstream origin main
 Enumerating objects: 5, done.
 Counting objects: 100% (5/5), done.
@@ -211,7 +214,7 @@ Delta compression using up to 4 threads
 Compressing objects: 100% (2/2), done.
 Writing objects: 100% (3/3), 441 bytes | 441.00 KiB/s, done.
 Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.			
 To https://github.com/jshores281/GIT_TRIX.git
  + 1a6228f...ae9ee27 main -> main (forced update)
 Branch 'main' set up to track remote branch 'main' from 'origin'.
@@ -232,11 +235,13 @@ Total 11 (delta 4), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (4/4), completed with 1 local object.
 To https://github.com/jshores281/GIT_TRIX.git
    ae9ee27..8996777  main -> main
-******************************************************************************
+
 
 C:\Users\jshor\Port_Proj\1CLI\6git>git push --set-upstream
 Everything up-to-date
 Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+
 
 C:\Users\jshor\Port_Proj\1CLI\6git>git remote -v
 origin  https://github.com/jshores281/GIT_TRIX.git (fetch)

@@ -1,0 +1,50 @@
+git merge
+git merge -h
+git checkout origin
+git merge main/origin
+git merge master
+git merge origin/origin
+git merge master/master
+git merge main/origin
+git merge origin/main
+git push --set-upstream origin main
+git push --set-upstream origin https://github.com/jshores281/WPM/main
+git push --set-upstream origin https://github.com/jshores281/WPM
+git push --set-upstream origin
+git push --set-upstream master
+git push --set-upstream main
+git remote -v
+git merge main
+git remote rm master
+git push --set-upstream main
+git remote add -f main https://github.com/jshores281/WPM
+git remote -v
+git push
+git add . && git commit -m  "ADDED TYPE SAFETY TO SSID SPACES, CHANGED OPTIONS"  && git push
+git checkout
+git merge origin
+git merge main
+git merge origin/main
+git checkout origin/main
+git show
+dir
+git show -h
+git show branch
+git branch
+git branch -h
+git branch -a
+git branch --merged
+git checkout main
+git merge origin
+git merge -h
+git merge --allow-unrelated-histories
+git merge origin --allow-unrelated-histories
+git merge main --allow-unrelated-histories
+git checkout origin
+git merge main --allow-unrelated-histories
+doskey /history
+git add . && git commit -m  "ADDED TYPE SAFETY TO SSID SPACES, CHANGED OPTIONS"  && git push
+git checkout main
+git push
+doskey /history
+doskey /history > githis3.txt
