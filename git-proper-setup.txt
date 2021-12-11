@@ -1,10 +1,7 @@
 gh repo create CLASSROOM-PY
 dir
 git init -b origin
-git remote -v
-git remote
-git push --set-upstream
-git pull --set-upstream
+
 git add . && git commit -m "FIRST COMMIT"
 git branch -M main
 git remote add origin https://github.com/jshores281/CLASSROOM-PY.git
