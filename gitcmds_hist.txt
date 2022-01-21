@@ -1,0 +1,50 @@
+git branch -b test
+git branch -b
+git branch -l
+git branch
+git branch -d master-test
+git branch -b master
+git init -b --help
+git branch
+git init -b master
+git init --help
+git branch
+git branch -D master-test
+git checkout master
+git branch -D master-test
+git branch
+git checkout master-test
+git add .
+git commit -am "test branch push #2"
+git branch
+git push -u master-test
+git push 
+git branch
+git checkout master-test
+git checkout master-test1
+git checkout -b master-test
+git checkout -b master-test1
+git branch -d master-test1
+git checkout master-test
+git branch -d master-test1
+git branch
+git checkout master
+git branch -d master-test1
+git branch -d master-test
+git checkout master-test
+git checkout -b master-test
+git checkout -b master-test1
+git branch -d master-test
+git checkout master
+git branch
+git branch -d master-test1
+git branch -D master-test1
+git checkout master
+git remote -v
+git branch
+git pull master master
+start .
+git branch
+git push master --delete master-test
+doskey /h 
+doskey /h  > gitcmds_hist.txt

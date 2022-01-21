@@ -11,7 +11,8 @@ gh auth login
 gh repo create DATA-TOOLS
 
 
-# start a file tracking in project directory
+# start local repo branch name [main]
+
 git init -b main
 
 
