@@ -1,0 +1,44 @@
+python ./time-log.py
+git remote -v
+git push --help
+git branch
+git checkout master
+git branch master
+git branch -b master
+git switch master
+git branch
+git checkout master -f
+git branch
+git branch -D test-master
+git push :test-master
+git push master --delete test-master
+git push master --delete ub-master
+git push master --delete ub-branch
+cat 
+git pull master master
+git push master master
+git add .
+git commit
+git push master master
+doskey /h
+cd C:\Users\jshor\Port_Proj\1CLI\6git
+doskey /h > git-branch-man.txt
+git branch
+git add .
+git commit
+git remote -v
+git push origin main
+git remote -v
+git branch
+git branch -b main
+git branch main
+git switch main
+git remote -v
+git branch
+git switch main -f
+dir
+git branch -D add-org-placeID-EP
+git branch
+git add .
+git commit
+doskey /h > git-branch-man.txt
