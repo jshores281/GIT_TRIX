@@ -96,6 +96,7 @@ git add . && git commit -m "VERSION CONTROL COMMENT" && git push
 
 git config --list
 
+git config --global core.editor "sublime --wait"
 
 
 git config --global user.email
