@@ -26,8 +26,9 @@ git branch
 
 git switch [branch name]
 
+git branch -d [local branch]
 
-
+git push [local branch] --delete [remote branch]
 
 
 
