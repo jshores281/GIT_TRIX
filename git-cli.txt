@@ -45,6 +45,11 @@ git push [local branch] --delete [remote branch]
 
 
 
+# git fetch
+
+git fetch --all
+git reset --hard [local]/[remote]
+
 
 
 
