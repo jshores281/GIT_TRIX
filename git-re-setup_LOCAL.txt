@@ -1,0 +1,20 @@
+GIT 
+
+rm -rf .git/
+rdir
+rmdir
+rmdir -rf .git
+dir
+git init
+git remote add origin https://github.com/jshores281/XTRK
+git remote -v
+
+git add .
+git commit -m "update"
+git push -f origin master
+git add .
+git commit -m "added readme.md"
+git push -f origin master
+doskey /history
+cd ..
+doskey /history > history.txt

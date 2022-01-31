@@ -30,6 +30,9 @@ git switch [branch name]
 
 git branch -d [local branch]
 
+git checkout -b [new-branch-name]
+
+
 git push [local branch] --delete [remote branch]
 
 
@@ -41,7 +44,9 @@ git push [local branch] --delete [remote branch]
 
 
 
+# git clone
 
+git clone -b [branch-name] https://remote/remote.git 
 
 
 

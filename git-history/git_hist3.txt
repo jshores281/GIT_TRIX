@@ -1,0 +1,50 @@
+git pull --help
+git pull --all
+git remot e-v
+git remote -v
+git remove --help
+git remove 
+git remote
+git fetch --all
+git fetch --all --help
+git fetch --all -f
+git fetch https://github.com/jshores281/Digi.Barter --all -f
+git remote -v
+git fetch main
+git fetch origin
+dir
+git fetch origin -f
+git fetch origin --all
+git fetch --all
+git remote -v
+git remote --help
+git remote --helpgit remote get-url push main https://github.com/jshores281/Digi.Barter
+git remote get-url push main https://github.com/jshores281/Digi.Barter
+git remote set-url push main https://github.com/jshores281/Digi.Barter
+git remote set-url --add push main https://github.com/jshores281/Digi.Barter
+git remote set-url --add --push main https://github.com/jshores281/Digi.Barter
+git remote -v
+git remote set-url --add --fetch main https://github.com/jshores281/Digi.Barter
+git remote set-url --add --all main https://github.com/jshores281/Digi.Barter
+git remote set-url --add main https://github.com/jshores281/Digi.Barter
+git remote -v
+git pull origin main
+git pull -f origin main
+git reset --help
+git reset --hard origin/main
+git reset --hard origin
+python ./Coin_Scout.py
+git remote -v
+git add . && git commit -m "INTERFACE FINISHED FOR SINGLE COIN" && git push
+git remote -v
+git push --set-upstream main
+git remote -v
+mdos
+msdos /history
+doskey /history
+python ./Coin_Scout.py
+chgip
+python ./Coin_Scout.py
+doskey /history
+git checkout --help
+doskey /history > git_hist3.txt
