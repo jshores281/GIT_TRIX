@@ -1,6 +1,5 @@
 #! git syntax
 ####################################################################################
-
 # git login/creation
 
 
@@ -26,14 +25,35 @@ git init -b main
 
 git branch
 
+
+# switches branchs locally
 git switch [branch name]
 
-git branch -d [local branch]
 
+
+# delete local branch
+git branch -D [local branch]
+
+
+# creates new branch and switches to it
 git checkout -b [new-branch-name]
 
 
+# delete remote branch in github
 git push [local branch] --delete [remote branch]
+
+
+
+# REVERTING TO ORIGINAL STATE IN TEST BRANCH FROM MASTER
+git checkout origin/master [filename]
+git commit
+git push -u 
+
+
+
+# rename local repo
+git remote rename [old-name] [new-name]
+
 
 
 
@@ -45,7 +65,7 @@ git push [local branch] --delete [remote branch]
 
 
 # git clone
-1
+
 git clone -b [branch-name] https://remote/remote.git 
 
 
@@ -67,6 +87,8 @@ git reset --hard [local]/[remote]
 # git push management
 
 
+# pushes with local tracking
+git push -u local/master
 
 
 
