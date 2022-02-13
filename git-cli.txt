@@ -45,7 +45,7 @@ git push [local branch] --delete [remote branch]
 
 
 # git clone
-
+1
 git clone -b [branch-name] https://remote/remote.git 
 
 
