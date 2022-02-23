@@ -36,7 +36,7 @@ git switch [branch name]
 git branch -D [local branch]
 
 
-# creates new branch and switches to it
+# creates new branch and switches to it WITH changes made in current branch = AWESOME! (forgets to change branch after coding in master)
 git checkout -b [new-branch-name]
 
 
@@ -56,6 +56,12 @@ git push -u
 git remote rename [old-name] [new-name]
 
 
+# default branch has been renamed on remote repo
+git branch -m main master
+git fetch origin
+git branch -u origin/master master
+git remote set-head origin -a
+
 
 
 
@@ -70,7 +76,7 @@ git clone -b [branch-name] https://remote/remote.git
 
 
 
-# git fetch
+# git fetch (update local repo from remote)
 
 git fetch --all
 git reset --hard [local]/[remote]
