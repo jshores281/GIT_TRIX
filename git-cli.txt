@@ -23,7 +23,7 @@ git init -b main
 # git branch management
 
 
-
+# shows current branch selected
 git branch
 
 
@@ -83,6 +83,31 @@ git reset --hard [local]/[remote]
 
 
 
+
+
+
+
+# UPDATE YOUR LOCAL REPO WITHOUT LOSSING CHANGES NOT YET COMMITTED 
+
+#Stash your local changes:
+git stash
+
+
+#Update the branch to the latest code
+git fetch --all
+git reset --hard [local]/[remote]
+#OR
+git pull
+
+
+#Merge your local changes into the latest code:
+git stash apply
+
+
+#Add, commit and push your changes
+git add
+git commit
+git push
 
 
 
