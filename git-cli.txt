@@ -18,43 +18,42 @@ git init -b main
 
 
 
-
 ====================================================================================
 # git branch management
+====================================================================================
 
 
+###################################################################################################################
 # shows current branch selected
 git branch
 
-
+###################################################################################################################
 # switches branchs locally
 git switch [branch name]
 
 
-
+###################################################################################################################
 # delete local branch
 git branch -D [local branch]
 
-
+###################################################################################################################
 # creates new branch and switches to it WITH changes made in current branch = AWESOME! (forgets to change branch after coding in master)
 git checkout -b [new-branch-name]
 
-
+###################################################################################################################
 # delete remote branch in github
 git push [local branch] --delete [remote branch]
 
 
-
+###################################################################################################################
 # REVERTING TO ORIGINAL STATE IN TEST BRANCH FROM MASTER
 git checkout origin/master [filename]
+
 git commit
 git push -u 
 
-
-
 # rename local repo
 git remote rename [old-name] [new-name]
-
 
 # default branch has been renamed on remote repo
 git branch -m main master
@@ -63,19 +62,29 @@ git branch -u origin/master master
 git remote set-head origin -a
 
 
+###################################################################################################################
+# REVERTING ONE FILE TO A PREVIOUS COMMIT ON SAME BRANCH
+git log --oneline
+git checkout [commit-id]~1 -- [path/to/file.py] [path/to/another-file.py]
+git status
 
+git add .
+git commit
+git push [remote] [branch]
 
 ====================================================================================
 # git pull management
+====================================================================================
 
 
 
+###################################################################################################################
 # git clone
 
 git clone -b [branch-name] https://remote/remote.git 
 
 
-
+###################################################################################################################
 # git fetch (update local repo from remote)
 
 git fetch --all
@@ -86,7 +95,7 @@ git reset --hard [local]/[remote]
 
 
 
-
+###################################################################################################################
 # UPDATE YOUR LOCAL REPO WITHOUT LOSSING CHANGES NOT YET COMMITTED 
 
 #Stash your local changes:
@@ -115,7 +124,7 @@ git push
 
 ====================================================================================
 # git push management
-
+====================================================================================
 
 # pushes with local tracking
 git push -u local/master
@@ -130,8 +139,7 @@ git push -u local/master
 
 ====================================================================================
 # git tracking
-
-
+====================================================================================
 
 # tracks changes made locally FROM local(origin) TO remote(main)  [-f = force push]
 git push [-f] --set-upstream [origin] [main]
@@ -151,7 +159,7 @@ git add . && git commit -m "VERSION CONTROL COMMENT" && git push
 
 ====================================================================================
 # git config
-
+====================================================================================
 
 git config --list
 
@@ -173,6 +181,7 @@ git config --global user.email 52839097+jshores281@users.noreply.github.com
 
 ====================================================================================
 # git state of local repo
+====================================================================================
 
 git show 
 
