@@ -91,7 +91,10 @@ git fetch --all
 git reset --hard [local]/[remote]
 
 
+# git fetch only one remote branch
 
+git fetch origin branch-name
+git reset --hard [local]/[remote]
 
 
 
