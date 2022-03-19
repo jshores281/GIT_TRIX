@@ -163,6 +163,45 @@ git push
 
 
 
+
+###################################################################################################################
+====================================================================================
+# git commit management 
+====================================================================================
+
+------------------------------------------------------------------------------------
+# unstage files 
+------------------------------------------------------------------------------------
+
+git restore --staged [files found in status]
+
+
+
+
+------------------------------------------------------------------------------------
+# commit specific files
+------------------------------------------------------------------------------------
+
+git commit [some files]
+Or if you are sure that you have a clean staging area you can
+
+git add [some files]       # add [some files] to staging area
+git add [some more files]  # add [some more files] to staging area
+git commit                 # commit [some files] and [some more files]
+If you want to make that commit available on both branches you do
+
+git stash                     # remove all changes from HEAD and save them somewhere else
+git checkout <other-project>  # change branches
+git cherry-pick <commit-id>   # pick a commit from ANY branch and apply it to the current
+git checkout <first-project>  # change to the other branch
+git stash pop                 # restore all changes again
+
+
+
+
+
+
+
 ###################################################################################################################
 ====================================================================================
 # git push management
