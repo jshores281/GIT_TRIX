@@ -122,11 +122,18 @@ git clone -b [branch-name] https://remote/remote.git
 # git fetch (update local repo from remote)
 ====================================================================================
 
+------------------------------------------------------------------------------------
+# git fetch update local repo from new changes on remote
+------------------------------------------------------------------------------------
+
 git fetch --all
 git reset --hard [origin]/[remote]
 
 
+
+------------------------------------------------------------------------------------
 # git fetch only one remote branch
+------------------------------------------------------------------------------------
 
 git fetch origin branch-name
 git reset --hard [local]/[remote]
@@ -134,9 +141,10 @@ git reset --hard [local]/[remote]
 
 
 
-====================================================================================
+------------------------------------------------------------------------------------
 # UPDATE YOUR LOCAL REPO WITHOUT LOSSING CHANGES NOT YET COMMITTED 
-====================================================================================
+------------------------------------------------------------------------------------
+
 
 #Stash your local changes:
 git stash
@@ -161,12 +169,54 @@ git push
 
 
 
+
+###################################################################################################################
+====================================================================================
+# git commit management 
+====================================================================================
+
+------------------------------------------------------------------------------------
+# unstage files 
+------------------------------------------------------------------------------------
+
+git restore --staged [files found in status]
+
+
+
+
+------------------------------------------------------------------------------------
+# commit specific files
+------------------------------------------------------------------------------------
+
+git commit [some files]
+Or if you are sure that you have a clean staging area you can
+
+git add [some files]       # add [some files] to staging area
+git add [some more files]  # add [some more files] to staging area
+git commit                 # commit [some files] and [some more files]
+If you want to make that commit available on both branches you do
+
+git stash                     # remove all changes from HEAD and save them somewhere else
+git checkout <other-project>  # change branches
+git cherry-pick <commit-id>   # pick a commit from ANY branch and apply it to the current
+git checkout <first-project>  # change to the other branch
+git stash pop                 # restore all changes again
+
+
+
+
+
+
+
 ###################################################################################################################
 ====================================================================================
 # git push management
 ====================================================================================
 
+------------------------------------------------------------------------------------
 # pushes with local tracking
+------------------------------------------------------------------------------------
+
 git push -u local/master
 
 
@@ -181,15 +231,24 @@ git push -u local/master
 # git tracking management
 ====================================================================================
 
+
+------------------------------------------------------------------------------------
 # tracks changes made locally FROM local(origin) TO remote(main)  [-f = force push]
+------------------------------------------------------------------------------------
+
 git push [-f] --set-upstream [origin] [main]
 
+------------------------------------------------------------------------------------
 # tracks changes made on repo
+------------------------------------------------------------------------------------
+
 git pull [-f] --set-upstream [origin] [main]
 
 
-
+------------------------------------------------------------------------------------
 # commits changes to github.com/profile/repository		
+------------------------------------------------------------------------------------
+
 git add . && git commit -m "VERSION CONTROL COMMENT" && git push
 
 
@@ -200,6 +259,8 @@ git add . && git commit -m "VERSION CONTROL COMMENT" && git push
 ====================================================================================
 # git config management
 ====================================================================================
+
+
 
 git config --list
 
