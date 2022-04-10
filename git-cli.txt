@@ -76,8 +76,11 @@ git checkout origin/master [filename]
 git commit
 git push -u 
 
+
 # rename local repo
 git remote rename [old-name] [new-name]
+
+
 
 # default branch has been renamed on remote repo
 git branch -m main master
@@ -145,23 +148,31 @@ git reset --hard [local]/[remote]
 # UPDATE YOUR LOCAL REPO WITHOUT LOSSING CHANGES NOT YET COMMITTED 
 ------------------------------------------------------------------------------------
 
+------------------------------------------------------------------------------------
+# Stash your local changes:
+------------------------------------------------------------------------------------
 
-#Stash your local changes:
 git stash
 
+------------------------------------------------------------------------------------
+# Update the branch to the latest code
+------------------------------------------------------------------------------------
 
-#Update the branch to the latest code
 git fetch --all
 git reset --hard [local]/[remote]
 #OR
 git pull
 
+------------------------------------------------------------------------------------
+# Merge your local changes into the latest code:
+------------------------------------------------------------------------------------
 
-#Merge your local changes into the latest code:
 git stash apply
 
+------------------------------------------------------------------------------------
+# Add, commit and push your changes
+------------------------------------------------------------------------------------
 
-#Add, commit and push your changes
 git add
 git commit
 git push
