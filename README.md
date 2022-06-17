@@ -1,42 +1,49 @@
-# GIT_TRIX: A commonly used and  quick guide to git CLI commands
-# 1. git auth & repo creation managemen
-# 2. 
-# 3. 
+# GIT_TRIX: A list of commonly used git CLI commnads quick guide.
+<br>
+
+## This guide is divided into sections based on main git features
+-----------------------------------------------------
+<br>
+
+# SECTIONS
+## 1. git auth & repo creation managemen
+## 2. git branch management
+## 3. git pull management
+## 4. git clone management
+## 5. git fetch (update local repo from remote)
 
 
+<br>
 
-## git auth & repo creation management =========================================
+#
+#
+
+<br>
+<br>
+
+# CONTENT
+
+# 1. git auth & repo creation management
+
 ### login to github user account
-------------------------------------------------------------------------------------
-gh auth login
+<pre>gh auth login</pre>
+
+### create remote repository on github.com/profile
+<pre>gh repo create DATA-TOOLS</pre>
+
+### start local repo in current dir
+<pre>git init .</pre>
 
 
-------------------------------------------------------------------------------------
-# create remote repository on github.com/profile
-------------------------------------------------------------------------------------
-gh repo create DATA-TOOLS
+### start local repo branch name [main]
+<pre>git init -b main</pre>
 
-------------------------------------------------------------------------------------
-# start local repo in current dir
-------------------------------------------------------------------------------------
-git init .
+<br>
 
-------------------------------------------------------------------------------------
-# start local repo branch name [main]
-------------------------------------------------------------------------------------
-git init -b main
+# 2. git branch management
 
-
-###################################################################################################################
-====================================================================================
-# git branch management
-====================================================================================
-
-------------------------------------------------------------------------------------
-# shows current branch selected
-------------------------------------------------------------------------------------
-
-git branch
+### shows current branch selected
+<pre>git branch</pre>
 
 
 ------------------------------------------------------------------------------------
