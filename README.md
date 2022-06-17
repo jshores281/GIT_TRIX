@@ -25,24 +25,24 @@
 
 # 1. git auth & repo creation management
 
-### login to github user account
+login to github user account
 <pre>gh auth login</pre>
 
-### create remote repository on github.com/profile
+create remote repository on github.com/profile
 <pre>gh repo create DATA-TOOLS</pre>
 
-### start local repo in current dir
+start local repo in current dir
 <pre>git init .</pre>
 
 
-### start local repo branch name [main]
+start local repo branch name [main]
 <pre>git init -b main</pre>
 
 <br>
 
 # 2. git branch management
 
-### shows current branch selected
+shows current branch selected
 <pre>git branch</pre>
 
 
