@@ -6,17 +6,11 @@
 <br>
 
 # SECTIONS
-## 1. [git auth & repo creation managemen](#git-auth-&-repo-creation-management)
+## 1. git auth & repo creation managemen
 ## 2. git branch management
 ## 3. git pull management
 ## 4. git clone management
 ## 5. git fetch (update local repo from remote)
-
-
-<br>
-
-#
-#
 
 <br>
 <br>
