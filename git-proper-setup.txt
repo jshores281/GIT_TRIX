@@ -1,3 +1,5 @@
+# creates remote repo with existing files
+
 gh repo create CLASSROOM-PY
 dir
 git init -b origin
