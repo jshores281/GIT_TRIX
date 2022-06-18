@@ -6,17 +6,17 @@
 <br>
 
 # SECTIONS
-## 1. [git auth & repo creation managemen](#1.1-git-auth-and-repo-creation-management)
-## 2. git branch management
-## 3. git pull management
-## 4. git clone management
-## 5. git fetch (update local repo from remote)
+## 1. [git auth & repo creation managemen](#1-git-auth-and-repo-creation-management)
+## 2. [git branch management](#2-git-branch-management)
+## 3. [git pull management](#3-git-pull-management)
+## 4. [git clone management]()
+## 5. [git fetch (update local repo from remote)
 <br>
 <br>
 
 # CONTENT
 
-# 1.1 git auth and repo creation management
+# 1. git auth and repo creation management
 
 login to github user account
 <pre>gh auth login</pre>
@@ -106,7 +106,7 @@ git push [remote] [branch]
 
 ###################################################################################################################
 ====================================================================================
-# git pull management
+# 3. git pull management
 ====================================================================================
 
 ------------------------------------------------------------------------------------
