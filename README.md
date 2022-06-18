@@ -15,79 +15,75 @@
 <br>
 
 # CONTENT
-
 # 1. git auth and repo creation management
 
 login to github user account
-<pre>gh auth login</pre>
+<pre>
+gh auth login
+</pre>
 
 create remote repository on github.com/profile
-<pre>gh repo create DATA-TOOLS</pre>
+<pre>
+gh repo create DATA-TOOLS
+</pre>
 
 start local repo in current dir
-<pre>git init .</pre>
-
+<pre>
+git init .
+</pre>
 
 start local repo branch name [main]
-<pre>git init -b main</pre>
+<pre>
+git init -b main
+</pre>
 
 <br>
 
 # 2. git branch management
 
 shows current branch selected
-<pre>git branch</pre>
+<pre>
+git branch
+</pre>
 
-
-------------------------------------------------------------------------------------
-# switches branchs locally
-------------------------------------------------------------------------------------
-
+switches branchs locally
+<pre>
 git switch [branch name]
+</pre>
 
-
-------------------------------------------------------------------------------------
-# delete local branch
-------------------------------------------------------------------------------------
-
+delete local branch
+<pre>
 git branch -D [local branch]
+</pre>
 
-
-------------------------------------------------------------------------------------
-# creates new branch and switches to it WITH changes made in current branch = AWESOME! (forgets to change branch after coding in master)
-------------------------------------------------------------------------------------
-
+creates new branch and switches to it WITH changes made in current branch = AWESOME! (forgets to change branch after coding in master)
+<pre>
 git checkout -b [new-branch-name]
+</pre>
 
-
-------------------------------------------------------------------------------------
-# delete remote branch in github
-------------------------------------------------------------------------------------
-
+delete remote branch in github
+<pre>
 git push [local branch] --delete [remote branch]
+</pre>
 
 
-
-------------------------------------------------------------------------------------
-# REVERTING TO ORIGINAL STATE IN TEST BRANCH FROM MASTER
-------------------------------------------------------------------------------------
-
+REVERTING TO ORIGINAL STATE IN TEST BRANCH FROM MASTER
+<pre>
 git checkout origin/master [filename]
-
 git commit
 git push -u 
+</pre>
 
+rename local repo
+<pre>git remote rename [old-name] [new-name]</pre>
 
-# rename local repo
-git remote rename [old-name] [new-name]
-
-
-
-# default branch has been renamed on remote repo
+default branch has been renamed on remote repo
+<pre>
 git branch -m main master
 git fetch origin
 git branch -u origin/master master
 git remote set-head origin -a
+</pre>
 
 
 
