@@ -6,7 +6,7 @@
 <br>
 
 # SECTIONS
-## 1. [git auth & repo creation managemen](#1-git-auth-&-repo-creation-management)
+## 1. [git auth & repo creation managemen](#1.1-git-auth-and-repo-creation-management)
 ## 2. git branch management
 ## 3. git pull management
 ## 4. git clone management
@@ -16,7 +16,7 @@
 
 # CONTENT
 
-# 1 git auth & repo creation management
+# 1.1 git auth and repo creation management
 
 login to github user account
 <pre>gh auth login</pre>
