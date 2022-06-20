@@ -7,7 +7,7 @@
 
 # SECTIONS
 ## 1. [git auth & repo creation managemen](#1-git-auth-and-repo-creation-management)
-## 2. [git branch management](#2-git-branch-management)
+## [2. git branch management](#2-git-branch-management)
 ## 3. [git pull management](#3-git-pull-management)
 ## 4. [git clone management]()
 ## 5. [git fetch (update local repo from remote)
@@ -15,6 +15,8 @@
 <br>
 
 # CONTENT
+<br>
+
 # 1. git auth and repo creation management
 
 login to github user account
@@ -36,8 +38,8 @@ start local repo branch name [main]
 <pre>
 git init -b main
 </pre>
-
 <br>
+
 
 # 2. git branch management
 
@@ -56,7 +58,8 @@ delete local branch
 git branch -D [local branch]
 </pre>
 
-creates new branch and switches to it WITH changes made in current branch = AWESOME! (forgets to change branch after coding in master)
+creates new branch and switches to it WITH changes made in current branch = AWESOME!.
+##### (if forgets to change to test branch after coding alot in master)
 <pre>
 git checkout -b [new-branch-name]
 </pre>
@@ -65,7 +68,6 @@ delete remote branch in github
 <pre>
 git push [local branch] --delete [remote branch]
 </pre>
-
 
 REVERTING TO ORIGINAL STATE IN TEST BRANCH FROM MASTER
 <pre>
@@ -86,11 +88,8 @@ git remote set-head origin -a
 </pre>
 
 
-
-------------------------------------------------------------------------------------
-# REVERTING ONE FILE TO A PREVIOUS COMMIT ON SAME BRANCH
-------------------------------------------------------------------------------------
-
+REVERTING ONE FILE TO A PREVIOUS COMMIT ON SAME BRANCH
+<pre>
 git log --oneline
 git checkout [commit-id]~1 -- [path/to/file.py] [path/to/another-file.py]
 git status
@@ -98,11 +97,10 @@ git status
 git add .
 git commit
 git push [remote] [branch]
+</pre>
 
 
-###################################################################################################################
-====================================================================================
-# 3. git pull management
+# 3 git pull management
 ====================================================================================
 
 ------------------------------------------------------------------------------------
@@ -122,7 +120,7 @@ git pull origin master
 # get clone downloads fresh copy of remote repo to your computer
 ------------------------------------------------------------------------------------
 
-git clone -b [branch-name] https://remote/remote.git 
+<pre>git clone -b [branch-name] https://remote/remote.git </pre>
 
 
 ###################################################################################################################
