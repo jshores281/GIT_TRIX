@@ -1,22 +1,13 @@
-# GIT_TRIX: A list of commonly used git CLI commnads quick guide.
-<br>
-
-## This guide is divided into sections based on main git features
------------------------------------------------------
+# GIT_TRIX: A curated list of commonly used git CLI commnads quick guide.
 <br>
 
 # SECTIONS
-## 1. [git auth & repo creation managemen](#1-git-auth-and-repo-creation-management)
-## [2. git branch management](#2-git-branch-management)
+## 1. [git auth & repo creation management](#1-git-auth-and-repo-creation-management)
+## 2. [git branch management](#2-git-branch-management)
 ## 3. [git pull management](#3-git-pull-management)
-## 4. [git clone management]()
-## 5. [git fetch (update local repo from remote)
-<br>
-<br>
+## 4. [git clone management](#4-git-clone-management)
 
-# CONTENT
-<br>
-
+<br></br>
 # 1. git auth and repo creation management
 
 login to github user account
@@ -38,47 +29,46 @@ start local repo branch name [main]
 <pre>
 git init -b main
 </pre>
-<br>
-
-
+---
+<br></br>
 # 2. git branch management
 
 shows current branch selected
 <pre>
 git branch
 </pre>
-
+---
 switches branchs locally
 <pre>
 git switch [branch name]
 </pre>
-
+---
 delete local branch
 <pre>
 git branch -D [local branch]
 </pre>
-
+---
 creates new branch and switches to it WITH changes made in current branch = AWESOME!.
 ##### (if forgets to change to test branch after coding alot in master)
 <pre>
 git checkout -b [new-branch-name]
 </pre>
-
+---
 delete remote branch in github
 <pre>
 git push [local branch] --delete [remote branch]
 </pre>
-
+---
 REVERTING TO ORIGINAL STATE IN TEST BRANCH FROM MASTER
 <pre>
 git checkout origin/master [filename]
 git commit
 git push -u 
 </pre>
-
+---
 rename local repo
 <pre>git remote rename [old-name] [new-name]</pre>
-
+---
 default branch has been renamed on remote repo
 <pre>
 git branch -m main master
@@ -86,8 +76,7 @@ git fetch origin
 git branch -u origin/master master
 git remote set-head origin -a
 </pre>
-
-
+---
 REVERTING ONE FILE TO A PREVIOUS COMMIT ON SAME BRANCH
 <pre>
 git log --oneline
@@ -98,16 +87,14 @@ git add .
 git commit
 git push [remote] [branch]
 </pre>
-
-
+---
+<br></br>
 # 3 git pull management
-====================================================================================
 
-------------------------------------------------------------------------------------
-# git pull is basically fetch/merge (adds changes made on remote repo and merges to your local repo, used in collab dev)
+## git pull is basically fetch/merge (adds changes made on remote repo and merges to your local repo, used in collab dev)
 ------------------------------------------------------------------------------------
 
-git pull origin master
+<pre>git pull origin master</pre>
 
 
 
@@ -129,23 +116,30 @@ git pull origin master
 ====================================================================================
 
 ------------------------------------------------------------------------------------
-# git fetch update local repo from new changes on remote
+# fetch all remote branches and overwrite local branch of new changes from remote
 ------------------------------------------------------------------------------------
 
-git fetch --all
-git reset --hard [origin]/[remote]
+<pre>git fetch --all
+git reset --hard [origin]/[remote-branch]</pre>
 
 
 
 ------------------------------------------------------------------------------------
-# git fetch only one remote branch
+# fetch only one remote branch and overwrite local repo 
 ------------------------------------------------------------------------------------
 
+<pre>git fetch origin branch-name
+git reset --hard [local]/[remote-branch]</pre>
+
+
+
+------------------------------------------------------------------------------------
+# git fetch remote branch and show which files have changed compared to local branch
+------------------------------------------------------------------------------------
+
+<pre>
 git fetch origin branch-name
-git reset --hard [local]/[remote]
-
-
-
+git reset [origin]/[remote-branch]</pre>
 
 ------------------------------------------------------------------------------------
 # CREATE YOUR LOCAL REPO FROM EXISTING BRANCH #

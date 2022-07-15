@@ -139,6 +139,11 @@ git clone -b [branch-name] https://remote/remote.git
 ------------------------------------------------------------------------------------
 
 git fetch --all
+
+# Shows which files have changed without overwriting
+git reset [origin]/[remote]
+
+# Overwrites changes from origin to local
 git reset --hard [origin]/[remote]
 
 
