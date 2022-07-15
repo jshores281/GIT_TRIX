@@ -3,12 +3,29 @@
 
 # SECTIONS
 ## 1. [Git auth & repo creation management](#1-git-auth-and-repo-creation-management)
-## 2. [Git branch management](#2-1git-branch-management)
+## 2. [Git branch management](#2-git-branch-management)
 ## 3. [Git pull management](#3-git-pull-management)
-## 4. [Git clone management](#4-git-clone-management)
+## 4. [Git local system management](#4-git-local-system-management)
+## 5. [TROUBLESHOOTING](#-TROUBLESHOOTING)
+----
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <br></br>
-# 1. Git auth and repo creation management
+# 1. Git auth and repo creation management.
 
 login to github user account
 <pre>
@@ -17,7 +34,7 @@ gh auth login
 
 create remote repository on github.com/profile
 <pre>
-gh repo create DATA-TOOLS
+gh repo create [REMOTE-REPO-NAME]
 </pre>
 
 start local repo in current dir
@@ -30,8 +47,33 @@ start local repo branch name [main]
 git init -b main
 </pre>
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <br></br>
-# 2. 1Git branch management
+# 2 git branch management.
 
 shows current branch selected
 <pre>
@@ -67,7 +109,9 @@ git push -u
 </pre>
 ---
 rename local repo
-<pre>git remote rename [old-name] [new-name]</pre>
+<pre>
+git remote rename [old-name] [new-name]
+</pre>
 ---
 default branch has been renamed on remote repo
 <pre>
@@ -88,17 +132,40 @@ git commit
 git push [remote] [branch]
 </pre>
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <br></br>
-# 3. git pull management
+# 3. git pull/fetch/clone management.
 
 ## git pull is basically fetch/merge (adds changes made on remote repo and merges to your local repo, used in collab dev)
 ------------------------------------------------------------------------------------
 
-<pre>git pull origin master</pre>
+<pre>
+git pull origin master
+</pre>
 
 
 
-###################################################################################################################
 ====================================================================================
 # git clone management
 ====================================================================================
@@ -128,8 +195,10 @@ git reset --hard [origin]/[remote-branch]</pre>
 # fetch only one remote branch and overwrite local repo 
 ------------------------------------------------------------------------------------
 
-<pre>git fetch origin branch-name
-git reset --hard [local]/[remote-branch]</pre>
+<pre>
+git fetch origin branch-name
+git reset --hard [local]/[remote-branch]
+</pre>
 
 
 
@@ -177,6 +246,7 @@ git reset --hard [local]/[remote]
 #OR
 git pull
 
+
 ------------------------------------------------------------------------------------
 # Merge your local changes into the latest code:
 ------------------------------------------------------------------------------------
@@ -218,7 +288,7 @@ git clean -fx
 # commit specific files
 ------------------------------------------------------------------------------------
 
-git commit [some files]
+git commit [file1, file2, file3]
 Or if you are sure that you have a clean staging area you can
 
 git add [some files]       # add [some files] to staging area
@@ -250,13 +320,6 @@ git stash pop                 # restore all changes again
 git push -u local/master
 
 
-
-
-
-
-
-
-###################################################################################################################
 ====================================================================================
 # git tracking management
 ====================================================================================
@@ -280,27 +343,58 @@ git pull [-f] --set-upstream [origin] [main]
 ------------------------------------------------------------------------------------
 
 git add . && git commit -m "VERSION CONTROL COMMENT" && git push
+----
 
 
 
 
 
-###################################################################################################################
-====================================================================================
-# git config management
-====================================================================================
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br></br>
+# 4. git local system management.
+
+## git config management
+----
+
+
+
+<pre>
 git config --list
+</pre>
 
+
+----
+<pre>
 git config --global core.editor "sublime --wait"
+</pre>
 
 
+
+----
+<pre>
 git config --global user.email
-git config --global user.email 52839097+jshores281@users.noreply.github.com
-
-
+</pre>
 
 
 
@@ -329,17 +423,40 @@ git diff
 
 
 
-###################################################################################################################
-###################################################################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br></br>
 ====================================================================================
-###################
-# TROUBLESHOOTING #
-###################
-====================================================================================
+
+# TROUBLESHOOTING 
+
+<br></br>
+
 
 
 # if: 
-#fatal: 'origin' does not appear to be a git repository
+## fatal: 'origin' does not appear to be a git repository
 
 
 # tell github where remote version of repository exist
