@@ -89,7 +89,7 @@ git push [remote] [branch]
 </pre>
 ---
 <br></br>
-# 3 git pull management
+# 3. git pull management
 
 ## git pull is basically fetch/merge (adds changes made on remote repo and merges to your local repo, used in collab dev)
 ------------------------------------------------------------------------------------
