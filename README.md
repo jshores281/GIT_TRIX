@@ -1,31 +1,21 @@
-# GIT_TRIX: A curated list of commonly used git CLI commnads quick guide.
+# GIT_TRIX: 
+## A curated list of commonly used git commands quick guide.
 <br>
 
+---
 # SECTIONS
-## 1. [Git auth & repo creation management](#1-git-auth-and-repo-creation-management)
-## 2. [Git branch management](#2-git-branch-management)
-## 3. [Git pull management](#3-git-pull-management)
-## 4. [Git local system management](#4-git-local-system-management)
-## 5. [TROUBLESHOOTING](#-TROUBLESHOOTING)
-----
-
-
-
-
-
-
-
-
-
-
-
-
+## 1. [Auth & repo creation management](#1-git-auth-and-repo-creation-management)
+## 2. [Branch management](#2-git-branch-management)
+## 3. [Fetch, pull, clone & push management](#3-git-fetch-pull-clone-and-push-management)
+## 4. [Local system management](#4-git-local-system-management)
+## 5. [Errors & troubleshooting](#5-errors-and-troubleshooting)
+---
 
 
 
 
 <br></br>
-# 1. Git auth and repo creation management.
+# 1. Git auth and repo creation management
 
 login to github user account
 <pre>
@@ -73,7 +63,7 @@ git init -b main
 
 
 <br></br>
-# 2 git branch management.
+# 2. Git branch management.
 
 shows current branch selected
 <pre>
@@ -155,7 +145,7 @@ git push [remote] [branch]
 
 
 <br></br>
-# 3. git pull/fetch/clone management.
+# 3. Git fetch pull clone and push management.
 
 ## git pull is basically fetch/merge (adds changes made on remote repo and merges to your local repo, used in collab dev)
 ------------------------------------------------------------------------------------
@@ -372,7 +362,7 @@ git add . && git commit -m "VERSION CONTROL COMMENT" && git push
 
 
 <br></br>
-# 4. git local system management.
+# 4 git local system management.
 
 ## git config management
 ----
@@ -417,7 +407,7 @@ git status
 git diff
 
 
-
+---
 
 
 
@@ -447,10 +437,7 @@ git diff
 
 
 <br></br>
-====================================================================================
-
-# TROUBLESHOOTING 
-
+# 5. Errors and troubleshooting
 <br></br>
 
 
