@@ -2,13 +2,13 @@
 <br>
 
 # SECTIONS
-## 1. [git auth & repo creation management](#1-git-auth-and-repo-creation-management)
-## 2. [git branch management](#2-git-branch-management)
-## 3. [git pull management](#3-git-pull-management)
-## 4. [git clone management](#4-git-clone-management)
+## 1. [Git auth & repo creation management](#1-git-auth-and-repo-creation-management)
+## 2. [Git branch management](#2-1git-branch-management)
+## 3. [Git pull management](#3-git-pull-management)
+## 4. [Git clone management](#4-git-clone-management)
 
 <br></br>
-# 1. git auth and repo creation management
+# 1. Git auth and repo creation management
 
 login to github user account
 <pre>
@@ -31,7 +31,7 @@ git init -b main
 </pre>
 ---
 <br></br>
-# 2. git branch management
+# 2. 1Git branch management
 
 shows current branch selected
 <pre>
