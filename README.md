@@ -1,5 +1,5 @@
 # GIT_TRIX: 
-## A curated list of commonly used git commands quick guide.
+## A curated quick guide list of frequently used git commands.
 <br>
 
 ---
@@ -10,10 +10,6 @@
 ## 4. [Local system management](#4-git-local-system-management)
 ## 5. [Errors & troubleshooting](#5-errors-and-troubleshooting)
 ---
-
-
-
-
 <br></br>
 # 1. Git auth and repo creation management
 
@@ -37,31 +33,6 @@ start local repo branch name [main]
 git init -b main
 </pre>
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <br></br>
 # 2. Git branch management.
 
@@ -80,7 +51,7 @@ delete local branch
 git branch -D [local branch]
 </pre>
 ---
-creates new branch and switches to it WITH changes made in current branch = AWESOME!.
+creates new branch and switches to it WITH changes made in current branch = AWESOME!
 ##### (if forgets to change to test branch after coding alot in master)
 <pre>
 git checkout -b [new-branch-name]
@@ -88,7 +59,7 @@ git checkout -b [new-branch-name]
 ---
 delete remote branch in github
 <pre>
-git push [local branch] --delete [remote branch]
+git push [local branch] --delete [remote-branch-name]
 </pre>
 ---
 REVERTING TO ORIGINAL STATE IN TEST BRANCH FROM MASTER
@@ -122,26 +93,6 @@ git commit
 git push [remote] [branch]
 </pre>
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <br></br>
