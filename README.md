@@ -92,14 +92,28 @@ git add .
 git commit
 git push [remote] [branch]
 </pre>
+
+
+
+
+
+
+
+# (last worked on point)
+
+
+
+
+
+
+
 ---
-
-
 <br></br>
 # 3. Git fetch pull clone and push management.
 
-## git pull is basically fetch/merge (adds changes made on remote repo and merges to your local repo, used in collab dev)
-------------------------------------------------------------------------------------
+git pull is basically fetch/merge (adds changes made on remote repo and merges to your local repo, used in collab dev)
+
+
 
 <pre>
 git pull origin master
@@ -107,13 +121,11 @@ git pull origin master
 
 
 
-====================================================================================
+---
 # git clone management
-====================================================================================
+<br>
 
-------------------------------------------------------------------------------------
-# get clone downloads fresh copy of remote repo to your computer
-------------------------------------------------------------------------------------
+get clone downloads fresh copy of remote repo to your computer
 
 <pre>git clone -b [branch-name] https://remote/remote.git </pre>
 
