@@ -28,9 +28,9 @@ start local repo in current dir
 git init .
 </pre>
 
-start local repo branch name [main]
+start local repo branch name [master]
 <pre>
-git init -b main
+git init -b master
 </pre>
 ---
 <br></br>
@@ -155,16 +155,16 @@ git reset [origin]/[remote-branch]</pre>
 # CREATE YOUR LOCAL REPO FROM EXISTING BRANCH #
 ------------------------------------------------------------------------------------
 
-
+<pre>
 git init
-git remote add origin git@github.com:lmschenck/otto-core.git
+git remote add origin git@github.com:[account]/[repo-name].git
 git remote -v
-git clone -b add-org-description git@github.com:lmschenck/otto-core.git
+git clone -b add-org-description git@github.com:[account]/[repo-name].git
 
 git fetch origin add-org-description
 git reset --hard origin/add-org-description
 git branch
-
+</pre>
 
 
 
