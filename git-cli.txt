@@ -135,28 +135,30 @@ git clone -b [branch-name] https://remote/remote.git
 ====================================================================================
 
 ------------------------------------------------------------------------------------
-# git fetch update local repo from new changes on remote
+# git fetch all remote branches and overwrite local branch of new changes from remote
 ------------------------------------------------------------------------------------
 
 git fetch --all
 
-# Shows which files have changed without overwriting
-git reset [origin]/[remote]
-
 # Overwrites changes from origin to local
-git reset --hard [origin]/[remote]
+git reset --hard [origin]/[remote-branch]
 
 
 
 ------------------------------------------------------------------------------------
-# git fetch only one remote branch
+# git fetch only one remote branch and overwrite local repo 
 ------------------------------------------------------------------------------------
 
 git fetch origin branch-name
-git reset --hard [local]/[remote]
+git reset --hard [local]/[remote-branch]
 
 
+------------------------------------------------------------------------------------
+# git fetch remote branch and show which files have changed compared to local branch
+------------------------------------------------------------------------------------
 
+git fetch origin branch-name
+git reset [origin]/[remote-branch]
 
 ------------------------------------------------------------------------------------
 # CREATE YOUR LOCAL REPO FROM EXISTING BRANCH #
