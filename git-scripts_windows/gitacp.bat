@@ -1,6 +1,6 @@
+:: GITACP: a shorthand script to show, add, commit & push.
+@echo off
 
-
-:: automatically adds changed files, commits to staged and pushs to origin git remote
 
 call git status
 
