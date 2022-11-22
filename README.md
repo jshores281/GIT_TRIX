@@ -1,5 +1,5 @@
 # GIT_TRIX: 
-## A curated list of commonly used git commands quick guide.
+## A curated quick guide of frequently used git commands.
 <br>
 
 ---
@@ -10,10 +10,6 @@
 ## 4. [Local system management](#4-git-local-system-management)
 ## 5. [Errors & troubleshooting](#5-errors-and-troubleshooting)
 ---
-
-
-
-
 <br></br>
 # 1. Git auth and repo creation management
 
@@ -32,36 +28,11 @@ start local repo in current dir
 git init .
 </pre>
 
-start local repo branch name [main]
+start local repo branch name [master]
 <pre>
-git init -b main
+git init -b master
 </pre>
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <br></br>
 # 2. Git branch management.
 
@@ -80,7 +51,7 @@ delete local branch
 git branch -D [local branch]
 </pre>
 ---
-creates new branch and switches to it WITH changes made in current branch = AWESOME!.
+creates new branch and switches to it WITH changes made in current branch = AWESOME!
 ##### (if forgets to change to test branch after coding alot in master)
 <pre>
 git checkout -b [new-branch-name]
@@ -88,7 +59,7 @@ git checkout -b [new-branch-name]
 ---
 delete remote branch in github
 <pre>
-git push [local branch] --delete [remote branch]
+git push [local branch] --delete [remote-branch-name]
 </pre>
 ---
 REVERTING TO ORIGINAL STATE IN TEST BRANCH FROM MASTER
@@ -121,34 +92,28 @@ git add .
 git commit
 git push [remote] [branch]
 </pre>
+
+
+
+
+
+
+
+# (last worked on point)
+
+
+
+
+
+
+
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <br></br>
 # 3. Git fetch pull clone and push management.
 
-## git pull is basically fetch/merge (adds changes made on remote repo and merges to your local repo, used in collab dev)
-------------------------------------------------------------------------------------
+git pull is basically fetch/merge (adds changes made on remote repo and merges to your local repo, used in collab dev)
+
+
 
 <pre>
 git pull origin master
@@ -156,13 +121,11 @@ git pull origin master
 
 
 
-====================================================================================
+---
 # git clone management
-====================================================================================
+<br>
 
-------------------------------------------------------------------------------------
-# get clone downloads fresh copy of remote repo to your computer
-------------------------------------------------------------------------------------
+get clone downloads fresh copy of remote repo to your computer
 
 <pre>git clone -b [branch-name] https://remote/remote.git </pre>
 
@@ -204,16 +167,16 @@ git reset [origin]/[remote-branch]</pre>
 # CREATE YOUR LOCAL REPO FROM EXISTING BRANCH #
 ------------------------------------------------------------------------------------
 
-
+<pre>
 git init
-git remote add origin git@github.com:lmschenck/otto-core.git
+git remote add origin git@github.com:[account]/[repo-name].git
 git remote -v
-git clone -b add-org-description git@github.com:lmschenck/otto-core.git
+git clone -b add-org-description git@github.com:[account]/[repo-name].git
 
 git fetch origin add-org-description
 git reset --hard origin/add-org-description
 git branch
-
+</pre>
 
 
 
