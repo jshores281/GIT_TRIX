@@ -93,75 +93,45 @@ git commit
 git push [remote] [branch]
 </pre>
 
-
-# (last worked on point)
-
-
-
-
-
-
-
 ---
 <br></br>
 # 3. Git fetch pull clone and push management.
-
-git pull is basically fetch/merge (adds changes made on remote repo and merges to your local repo, used in collab dev)
-
-
-
+---
+git pull: basically fetch/merge (adds changes made on remote repo and merges to your local repo, used in collab dev)
 <pre>
 git pull origin master
 </pre>
-
-
-
 ---
-# git clone management
-<br>
-
-get clone downloads fresh copy of remote repo to your computer
-
-<pre>git clone -b [branch-name] https://remote/remote.git </pre>
-
-
-###################################################################################################################
-====================================================================================
-# git fetch (update local repo from remote)
-====================================================================================
-
-------------------------------------------------------------------------------------
-# fetch all remote branches and overwrite local branch of new changes from remote
-------------------------------------------------------------------------------------
-
-<pre>git fetch --all
-git reset --hard [origin]/[remote-branch]</pre>
-
-
-
-------------------------------------------------------------------------------------
-# fetch only one remote branch and overwrite local repo 
-------------------------------------------------------------------------------------
-
+git clone: copies full repo to local env
+<pre>
+git clone [repo-url]
+</pre>
+---
+get clone branch: downloads fresh copy of remote repo to your computer
+<pre>
+git clone -b [branch-name] https://remote/remote.git 
+</pre>
+---
+git fetch all: gets all remote branches and overwrites local branchs
+##### *Dangerous, overwrites everything in local repo
+<pre>
+git fetch --all
+git reset --hard [origin]/[remote-branch]
+</pre>
+---
+fetch only one remote branch and overwrite local repo 
 <pre>
 git fetch origin branch-name
 git reset --hard [local]/[remote-branch]
 </pre>
-
-
-
-------------------------------------------------------------------------------------
-# git fetch remote branch and show which files have changed compared to local branch
-------------------------------------------------------------------------------------
-
+---
+git fetch remote branch and show which files have changed compared to local branch
 <pre>
 git fetch origin branch-name
-git reset [origin]/[remote-branch]</pre>
-
-------------------------------------------------------------------------------------
-# CREATE YOUR LOCAL REPO FROM EXISTING BRANCH #
-------------------------------------------------------------------------------------
-
+git reset [origin]/[remote-branch]
+</pre>
+---
+CREATE YOUR LOCAL REPO FROM EXISTING BRANCH #
 <pre>
 git init
 git remote add origin git@github.com:[account]/[repo-name].git
@@ -173,156 +143,116 @@ git reset --hard origin/add-org-description
 git branch
 </pre>
 
+<br>
 
-
-------------------------------------------------------------------------------------
-# UPDATE YOUR LOCAL REPO WITHOUT LOSSING CHANGES NOT YET COMMITTED #
-------------------------------------------------------------------------------------
-
-------------------------------------------------------------------------------------
-# Stash your local changes:
-------------------------------------------------------------------------------------
-
+---
+## UPDATE YOUR LOCAL REPO WITHOUT LOSSING CHANGES NOT YET COMMITTED
+---
+Stash your local changes:
+<pre>
 git stash
+</pre>
 
-------------------------------------------------------------------------------------
-# Update the branch to the latest code
-------------------------------------------------------------------------------------
+Update the branch to the latest code
 
-git fetch --all
-git reset --hard [local]/[remote]
-#OR
+<pre>
 git pull
+</pre>
 
-
-------------------------------------------------------------------------------------
-# Merge your local changes into the latest code:
-------------------------------------------------------------------------------------
-
+Merge your local changes into the latest code:
+<pre>
 git stash apply
+</pre>
 
-------------------------------------------------------------------------------------
-# Add, commit and push your changes
-------------------------------------------------------------------------------------
+---
+git Add, commit and push your changes
 
-git add
+<pre>
+git add [.] , [single-files] , [directory/]
 git commit
 git push
+</pre>
 
 
+<br>
 
-
-
-###################################################################################################################
-====================================================================================
+---
 # git commit management 
-====================================================================================
 
-------------------------------------------------------------------------------------
-# unstage files 
-------------------------------------------------------------------------------------
 
+unstage files 
+
+<pre>
 git restore --staged [files found in status]
+</pre>
 
+<br>
 
-------------------------------------------------------------------------------------
-# delete untracked local files 
-------------------------------------------------------------------------------------
+---
+delete untracked local files 
 
+<pre>
 git clean -fx
+</pre>
 
+---
+commit specific files
 
-------------------------------------------------------------------------------------
-# commit specific files
-------------------------------------------------------------------------------------
-
+<pre>
 git commit [file1, file2, file3]
-Or if you are sure that you have a clean staging area you can
-
-git add [some files]       # add [some files] to staging area
-git add [some more files]  # add [some more files] to staging area
-git commit                 # commit [some files] and [some more files]
-If you want to make that commit available on both branches you do
-
-git stash                     # remove all changes from HEAD and save them somewhere else
-git checkout <other-project>  # change branches
-git cherry-pick <commit-id>   # pick a commit from ANY branch and apply it to the current
-git checkout <first-project>  # change to the other branch
-git stash pop                 # restore all changes again
+</pre>
 
 
+If you want to make that commit available on both branches...
+
+<pre>
+git stash                     
+git checkout <other-project>  
+git cherry-pick <commit-id>   
+git checkout <first-project>  
+git stash pop                 
+</pre>
 
 
 
 
 
-###################################################################################################################
-====================================================================================
-# git push management
-====================================================================================
+---
+## git push management
+---
 
-------------------------------------------------------------------------------------
-# pushes with local tracking
-------------------------------------------------------------------------------------
+pushes with local tracking
 
+<pre>
 git push -u local/master
+</pre>
 
+---
 
-====================================================================================
-# git tracking management
-====================================================================================
+git tracking management: tracks changes made locally FROM local(origin) TO remote(main)  [-f = force push]
 
-
-------------------------------------------------------------------------------------
-# tracks changes made locally FROM local(origin) TO remote(main)  [-f = force push]
-------------------------------------------------------------------------------------
-
+<pre>
 git push [-f] --set-upstream [origin] [main]
-
-------------------------------------------------------------------------------------
-# tracks changes made on repo
-------------------------------------------------------------------------------------
-
-git pull [-f] --set-upstream [origin] [main]
+</pre>
 
 
-------------------------------------------------------------------------------------
-# commits changes to github.com/profile/repository		
-------------------------------------------------------------------------------------
+---
+## commits changes to github.com/profile/repository		
 
+<pre>
 git add . && git commit -m "VERSION CONTROL COMMENT" && git push
-----
+</pre>
 
 
 
 
 
+<br>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<br></br>
 # 4 git local system management.
 
-## git config management
+git config management
 ----
 
 
@@ -346,17 +276,17 @@ git config --global user.email
 
 
 
+<br>
 
-
-
-
-
-###################################################################################################################
-====================================================================================
+---
 # git state management
-====================================================================================
 
+git show: displays current head location, comments, file additions or subtractions
+
+<pre>
 git show 
+</pre>
+
 
 git log --oneline
 

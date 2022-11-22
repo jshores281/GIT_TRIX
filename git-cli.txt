@@ -14,7 +14,7 @@ gh auth login
 ------------------------------------------------------------------------------------
 # create remote repository on github.com/profile
 ------------------------------------------------------------------------------------
-gh repo create DATA-TOOLS
+gh repo create [new-repo-name]
 
 ------------------------------------------------------------------------------------
 # start local repo in current dir
