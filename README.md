@@ -1,5 +1,5 @@
 # GIT_TRIX: 
-## A curated quick guide of frequently used git commands.
+## A curated quick reference guide of frequently used git commands.
 <br>
 
 ---
